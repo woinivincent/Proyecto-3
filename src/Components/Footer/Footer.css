@@ -1,0 +1,28 @@
+.footer {
+    background-color: #EEE;
+    color: #393e43;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav,
+.footer-contact,
+.footer-socials,
+.footer-container-form {
+    padding: 0.625rem 1.25rem 0.625rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-title {
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin: 0.75rem 0;
+}
+
+.footer-nav-list {
+    list-style: none;
+}
