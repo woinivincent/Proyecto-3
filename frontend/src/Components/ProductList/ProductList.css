@@ -1,0 +1,119 @@
+
+.product-list-container {
+    padding: 7rem;
+    margin: 4.7rem 0 1.373rem;
+    width: 100%;
+  }
+  
+  .product-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .product-card {
+    width: 100%;
+    max-width: 20rem;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 17rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+  }
+  
+  .product-name {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .product-price {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    color: #9E7F54;
+  }
+  
+  .add-to-cart-btn {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #9E7F54;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #7d6443;
+  }
+  
+  .loader {
+    width: 3rem;
+    height: 3rem;
+    background: #353535;
+    display: flex;
+    margin: 12rem auto;
+    position: relative;
+    animation: rotationBack 1s ease-in-out infinite reverse;
+  }
+  
+  .loader::before {
+    content: '';
+    left: 0;
+    top: 0;
+    transform: rotate(45deg);
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    background: #2e2e2e;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  }
+  
+  .loader::after {
+    content: '';
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: #9E7F54;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  }
+  
+  @keyframes rotationBack {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .product-list {
+      justify-content: space-around;
+    }
+  
+    .product-card {
+      width: 45.7%;
+      max-width: 23rem;
+    }
+  }
+  
+  @media (min-width: 1024px){
+    .product-card {
+      width: 18.7rem;
+    }
+  }

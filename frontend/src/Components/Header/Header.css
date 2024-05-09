@@ -1,0 +1,169 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #4343431A;
+    box-shadow: 0px -5px 13px 0px #010b22;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.5rem;
+  }
+  
+  .container-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .container-icon-list {
+    flex: 1;
+  }
+  
+  .icon-list {
+    font-size: 2.377rem;
+  }
+  
+  .user-cart {
+    font-size: 1.7rem;
+  }
+  
+  .user-container-cart a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .user {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .container-count {
+    border-radius: 50%;
+    background-color: #434343;
+    width: 1.03rem;
+    height: 1.03rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .user-container-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .user-count {
+    color: #fff;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+  
+  .logo {
+    max-height: 3.3125rem;
+    max-width: 100%;
+  }
+  
+  .user-container-register,
+  .social-icons,
+  .tabs {
+    display: none;
+  }
+  @media (min-width: 1024px) {
+    .logo {
+        max-height: 7rem;
+        max-width: 100%;
+    }
+    .container-icon-list {
+        display: none;
+    }
+  
+    .social-icons {
+        display: flex;
+        flex: 1;
+    }
+  
+    .user-container-register {
+        display: inline-block;
+        margin-right: 1.23rem;
+    }
+  
+    .user-account,
+    .user-sesion {
+        text-decoration: none;
+        color: #434343;
+        font-size: 0.75rem;
+    }
+  
+    .user-account {
+        padding-right: 0.37rem;
+        border-right: 1px solid #525252;
+    }
+  
+    .user-container-cart {
+        margin-right: 1.23rem;
+    }
+  
+    .user-cart {
+        font-size: 1.6rem;
+    }
+  
+    .user-container-cart a {
+        text-decoration: none;
+        color: #000;
+    }
+  
+    .bi-whatsapp,
+    .bi-instagram {
+        font-size: 2rem;
+        margin: 0 1.3rem;
+    }
+  
+    .user-account:hover,
+    .user-sesion:hover {
+        text-decoration: underline;
+    }
+  
+    .tabs {
+        display: inline-block;
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+  
+    .tabs-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+  
+    .tabs-list-item {
+        font-size: 0.875rem;
+        padding: 0.8125rem;
+    }
+  
+    .tabs-item-link {
+        text-decoration: none;
+        color: #9E7F54;
+    }
+  
+    .home-link:hover {
+        opacity: 0.9;
+    }
+  
+    .tabs-list-item:hover {
+        opacity: 0.6;
+        background-color: transparent;
+    }  
+  }

@@ -1,0 +1,65 @@
+{
+    "info": {
+        "next": "../productsData/products3.json",
+        "prev": "../productsData/products2.json",
+        "number": 2
+    },
+    "results": [
+        {
+            "id": 9,
+            "nameProduct": "Pan con pasas y nueces",
+            "img": "/images/cinnamon-oatmeal-raisin-bread-1-1.jpg",
+            "price": 2860.0,
+            "stock": 10
+        },
+        {
+            "id": 10,
+            "nameProduct": "Pan de hamburguesa",
+            "img": "/images/vegetarian-vegan-burger-with-whole-wheat-buns-tomatoes-onions-vegan-mayonnaise-spinach-fresh-bun-with-flaxseed-sesame-seeds-surrounded-by-spinach-leaves_152625-9420.jpg",
+            "price": 1265.0,
+            "stock": 5
+        },
+        {
+            "id": 11,
+            "nameProduct": "Figazza",
+            "img": "/images/Whole-Wheat-Rolls-21-1200x1800.jpg",
+            "price": 1265.0,
+            "stock": 15
+        },
+        {
+            "id": 12,
+            "nameProduct": "Figazza saborizada",
+            "img": "/images/whole-wheat-dinner-rolls-recipe-square.jpg",
+            "price": 970.0,
+            "stock": 8
+        },
+        {
+            "id": 13,
+            "nameProduct": "Pizza individual",
+            "img": "/images/whole-wheat-pizza-dough-5.jpg",
+            "price": 1115.0,
+            "stock": 3
+        },
+        {
+            "id": 14,
+            "nameProduct": "Pizza ",
+            "img": "/images/wholewheatpizza2.jpg",
+            "price": 1115.0,
+            "stock": 9
+        },
+        {
+            "id": 15,
+            "nameProduct": "Pizzeta",
+            "img": "/images/Pizza-1-scaled.webp",
+            "price": 1115.0,
+            "stock": 12
+        },
+        {
+            "id": 16,
+            "nameProduct": "Pepas de membrillo",
+            "img": "/images/images (2).jpeg",
+            "price": 2060.0,
+            "stock": 12
+        }
+    ]
+}
