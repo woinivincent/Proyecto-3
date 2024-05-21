@@ -1,0 +1,83 @@
+.product-form{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 60%;
+    flex-direction: column;
+    box-shadow: -4px 10px 20px rgba(182, 116, 9, 0.39)  ;   ; 
+    background-color:#9E7F54;
+    opacity:100%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    align-items: center;
+    margin-top: .1rem;
+    color: #fff;
+    
+}
+.form-group{
+
+    padding: 10px;
+    width:100% ;
+    margin-bottom: 1rem;
+    z-index: 1000;
+
+}
+label{
+    margin-right: 2rem;
+}
+input{
+    width: 150px;
+    height: 40px;
+    border: 1px solid #000;
+    background: white;
+    border-radius: 5px;
+}
+textarea{
+    border: 1px solid #000;
+    background: white;
+    border-radius: 5px;
+
+    
+}
+h2{
+    margin-top: 1rem;
+}
+.agregarImagen{
+    display: flex;
+    border: none;
+    flex-direction: column;
+    
+
+    input{
+        border: none;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .file-upload-btn {
+        background-color: #9E7F54;
+        color: white;
+        padding: 8px 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 1rem;
+        margin-left: .8rem;
+        width: 150px;
+      }
+      
+      .file-upload-btn:hover {
+        background-color: #372c1d6f;
+      }
+
+    
+}
+.submitBtn{
+    width: 150px;
+    height:40px;
+    margin-bottom:1rem;
+    background-color: #372c1d6f;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+  }

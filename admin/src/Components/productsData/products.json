@@ -1,0 +1,65 @@
+{
+    "info": {
+        "next": "../productsData/products2.json",
+        "prev": null,
+        "number": 1
+    },
+    "results": [
+        {
+            "id": 1,
+            "nameProduct": "Rapiditas Integrales",
+            "img": "/images/16238-7b3b5b5f07d24947bbcf9d725b1f3038.jpg",
+            "price":1115.0,
+            "stock": 10
+        },
+        {
+            "id": 2,
+            "nameProduct": "Tapas de Tarta",
+            "img": "/images/torta_int_spinaci1.jpg",
+            "price": 1250.0,
+            "stock": 5
+        },
+        {
+            "id": 3,
+            "nameProduct": "Base de Tarta",
+            "img": "/images/Whole-Wheat-all-butter-pie-crust_hero_for-web-e1654532884176.jpg",
+            "price": 585.0,
+            "stock": 15
+        },
+        {
+            "id": 4,
+            "nameProduct": "Tapas de empanada",
+            "img": "/images/descarga.jpeg",
+            "price": 1250.0,
+            "stock": 8
+        },
+        {
+            "id": 5,
+            "nameProduct": "Talitas",
+            "img": "/images/8bcdfa2ae6b6a7aeeca975c6de35ef41.jpg",
+            "price": 1020.0,
+            "stock": 3
+        },
+        {
+            "id": 6,
+            "nameProduct": "Marineras",
+            "img": "/images/DSC03534.jpg",
+            "price": 1020.0,
+            "stock": 9
+        },
+        {
+            "id": 7,
+            "nameProduct": "Pan con semillas",
+            "img": "/images/fb6625-splendid-table-brown-bread-kajakiki-istock-gettyimagesplus-lede.jpg",
+            "price": 1905.0,
+            "stock": 12
+        },
+        {
+            "id": 8,
+            "nameProduct": "Pan sin semillas",
+            "img": "/images/ezekiel-bread-1296x728-feature.jpg",
+            "price": 1905.0,
+            "stock": 12
+        }
+    ]
+}

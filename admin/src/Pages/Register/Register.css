@@ -1,0 +1,135 @@
+.main__register {
+    width: 100%;
+    padding: 0.9375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    padding: auto;
+    
+}
+.paragraph {
+    font-size: 1rem;
+    margin: 1.25rem 0;
+    text-wrap: balance;
+    text-align: center;
+    color: #434343;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    position: relative;
+}
+
+.form-label {
+    margin: 0.3125rem 0;
+    font-size: 0.8125rem;
+    color: #434343;
+}
+
+.form input {
+    padding: 0.6875rem;
+    width: 100%;
+    border: 1px solid #CCCCCC;
+    font-size: 1rem;
+}
+
+.form input:focus {
+    border-color: #52a8eccc;
+}
+
+.form input::placeholder {
+    color: #CCCCCC;
+}
+
+.input-submit {
+    margin-top: 1.3rem;
+    width: 100%;
+    background-color: #9e7f54;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 1.125rem;
+    text-align: center;
+}
+
+.input-submit:hover {
+    opacity: 0.9;
+}
+
+.bi-eye::before,
+.bi-eye-slash::before {
+    color: #9E7F54;
+    font-size: 1.3rem;
+}
+
+.password-icons {
+    position: absolute;
+    top: 55%;
+    right: 1rem;
+}
+
+.user-login {
+    padding: 1.0625rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.login-paragraph {
+    color: #434343;
+    margin: 0 0.1rem;
+    font-size: 0.875rem;
+}
+
+.login-link {
+    margin: 0 0.1rem;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #434343;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .main__register {
+        padding: 1rem 13.0625rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main__register {
+        padding: 1rem 20rem;
+       ;
+    }
+
+    .paragraph {
+        margin: 1.4375rem 0;
+        font-size: 0.9938rem;
+    }
+
+}
+
+@media (min-width: 1220px) {
+    .form {
+        max-width: 70%;
+    }
+}

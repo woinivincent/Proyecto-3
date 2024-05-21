@@ -114,6 +114,30 @@
   
   @media (min-width: 1024px){
     .product-card {
-      width: 18.7rem;
+      width: 16.7rem;
+    }
+    .pagination{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2rem;
+    
+    }
+    .page-btn{
+      width: 200px;
+      height: 50px;
+      background: #9E7F54;
+      border: 2px solid transparent;
+      color: #fff;
+      font-size: 20px;
+    }
+    .bi-arrow-left{
+     
+      margin-right: 2rem;
+      text-align: center;
+    }
+    .bi-arrow-right{
+     
+      margin-left: 2rem;
+      text-align: center;
     }
   }

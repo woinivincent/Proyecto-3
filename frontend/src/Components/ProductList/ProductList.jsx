@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './ProductList.css'; // Asegúrate de importar tus estilos CSS
 import productosData from '../productsData/products.json'; 
+
 // Importa los datos del archivo JSON
 
 const ProductList = () => {
@@ -83,7 +84,7 @@ const ProductList = () => {
         </div>
       )}
 
-      <div className="pagination">
+<div className="pagination">
         <button className="page-btn" onClick={handlePrevPage} disabled={!prevPageUrl}>
           <i className="bi bi-arrow-left"></i> Anterior
         </button>

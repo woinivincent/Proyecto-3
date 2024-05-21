@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css'
+import { Link } from 'react-router-dom';
 
   
 function Header() {
@@ -18,8 +19,8 @@ function Header() {
                 </div>
                 <div className="user">
                     <div className="user-container-register">
-                        <a className="user-account" href="/Register">CREAR CUENTA</a>
-                        <a className="user-sesion" href="/Login">INICIAR SESIÓN</a>
+                        <Link className="user-account" to="/Register">CREAR CUENTA</Link>
+                        <Link className="user-sesion" to="/Login">INICIAR SESIÓN</Link>
                     </div>
                     <div className="user-container-cart">
                         <a href="/Cart"><i className="user-cart bi bi-cart2"></i></a>
