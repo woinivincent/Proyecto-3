@@ -1,4 +1,4 @@
-.main {
+.main__login {
     width: 100%;
     margin-top: 5rem;
     padding: 0.9375rem;
@@ -60,15 +60,10 @@
     text-decoration: underline;
 }
 
-.password-icons {
+.password-icons-login {
     position: absolute;
-    top: 45%;
+    top: 47%;
     right: 1rem;
-}
-
-.bi-eye {
-    display: none;
-    
 }
 
 .login-btn {
@@ -83,11 +78,12 @@
 .login-btn:hover {
     opacity: 0.9;
 }
+
 @media (min-width: 1024px) {
     .main__login {
-        margin-top:10rem;
         padding: 7.35rem;
         width: 70%;
-        margin-left:18rem;
+        margin: auto;
+        margin-top: 10rem;
     }
 }

@@ -1,6 +1,6 @@
 
 import React, { useEffect } from 'react';
-import { updateUserCount, initSlider } from "../../Components/Utils/Slider"; // Importa las funciones necesarias desde Slider.js
+import { initSlider } from "../../Components/Utils/Slider"; // Importa las funciones necesarias desde Slider.js
 import './Home.css'
 
 
@@ -8,7 +8,6 @@ import './Home.css'
 function Home() {
     // Utiliza useEffect para ejecutar las funciones cuando el componente se monte
     useEffect(() => {
-        updateUserCount(); // Actualiza el contador de elementos en el carrito
         initSlider(); // Inicializa el slider
     }, []);
     return (

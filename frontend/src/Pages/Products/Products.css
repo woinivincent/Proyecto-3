@@ -1,0 +1,10 @@
+.main__products {
+    margin: 4.7rem 0 1.373rem;
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .main__products {
+        margin-top: 11.3rem;
+    }
+}

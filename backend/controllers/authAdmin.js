@@ -43,7 +43,7 @@ async function login(req, res) {
         } else if (role !== "superadmin" && role !== "admin" && role !== "moderator") {
             res.status(400).send({ msg: "No eres Admin" });
         } else {
-            res.status(200).send({ access: jwt.createAccessTokenAdmin(admin) });
+            res.status(200).send({ accessAdmin: jwt.createAccessTokenAdmin(admin) });
         }
     } catch (error) {
         res.status(500).send({ msg: "Error en el servidor" });

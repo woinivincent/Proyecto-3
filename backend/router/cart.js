@@ -18,6 +18,7 @@ api.get("/cart", [md_auth.asureAuth], cartController.getCart);
 //Ruta para obtener un producto especifico
 api.get("/cart/:productId", [md_auth.asureAuth], cartController.getCartProduct);
 
+// Ruta para incrementar la cantidad de un producto en el carrito
 api.put('/cart/aumentar/:productId', [md_auth.asureAuth], cartController.aumentarCantidad);
 
 // Ruta para disminuir la cantidad de un producto en el carrito

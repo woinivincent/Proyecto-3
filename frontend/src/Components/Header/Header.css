@@ -7,48 +7,48 @@
     background-color: #FFFFFF;
     border-bottom: 1px solid #4343431A;
     box-shadow: 0px -5px 13px 0px #010b22;
-  }
-  
-  .nav {
+}
+
+.nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     padding: 0.5rem;
-  }
-  
-  .container-logo {
+}
+
+.container-logo {
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
-  }
-  
-  .container-icon-list {
+}
+
+.container-icon-list {
     flex: 1;
-  }
-  
-  .icon-list {
+}
+
+.icon-list {
     font-size: 2.377rem;
-  }
-  
-  .user-cart {
+}
+
+.user-cart {
     font-size: 1.7rem;
-  }
-  
-  .user-container-cart a {
+}
+
+.user-container-cart a {
     text-decoration: none;
     color: #000;
-  }
-  
-  .user {
+}
+
+.user {
     flex: 1;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-  }
-  
-  .container-count {
+}
+
+.container-count {
     border-radius: 50%;
     background-color: #434343;
     width: 1.03rem;
@@ -56,49 +56,53 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .user-container-cart {
+}
+
+.user-container-cart {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .user-count {
+}
+
+.user-count {
     color: #fff;
     font-size: 0.7rem;
     text-align: center;
-  }
-  
-  .logo {
+}
+
+.logo {
     max-height: 3.3125rem;
     max-width: 100%;
-  }
-  
-  .user-container-register,
-  .social-icons,
-  .tabs {
+}
+
+.user-container-register,
+.social-icons,
+.tabs {
     display: none;
-  }
-  @media (min-width: 1024px) {
+}
+
+@media (min-width: 1024px) {
     .logo {
         max-height: 7rem;
         max-width: 100%;
     }
+
     .container-icon-list {
         display: none;
     }
-  
+
     .social-icons {
         display: flex;
         flex: 1;
     }
-  
+
     .user-container-register {
-        display: inline-block;
+        display: flex;
+        justify-content: center;
         margin-right: 1.23rem;
+        position: relative;
     }
-  
+
     .user-account,
     .user-sesion {
         text-decoration: none;
@@ -106,65 +110,117 @@
         font-size: 0.75rem;
         margin-left: .5rem;
     }
-  
+
     .user-account {
         padding-right: 0.37rem;
         border-right: 1px solid #525252;
     }
-  
+
     .user-container-cart {
         margin-right: 1.23rem;
+        margin-bottom: 0.13rem;
     }
-  
+
     .user-cart {
         font-size: 1.6rem;
     }
-  
+
     .user-container-cart a {
         text-decoration: none;
         color: #000;
     }
-  
+
     .bi-whatsapp,
     .bi-instagram {
         font-size: 2rem;
         margin: 0 1.3rem;
     }
-  
+
     .user-account:hover,
     .user-sesion:hover {
         text-decoration: underline;
     }
-  
+
     .tabs {
         display: inline-block;
         width: 100%;
         background-color: #FFFFFF;
     }
-  
+
     .tabs-list {
         display: flex;
         justify-content: center;
         align-items: center;
         list-style: none;
     }
-  
+
     .tabs-list-item {
         font-size: 0.875rem;
         padding: 0.8125rem;
     }
-  
+
     .tabs-item-link {
         text-decoration: none;
         color: #9E7F54;
     }
-  
+
     .home-link:hover {
         opacity: 0.9;
     }
-  
+
     .tabs-list-item:hover {
         opacity: 0.6;
         background-color: transparent;
-    }  
-  }
+    }
+
+    .active {
+        border-bottom: 2px solid #9E7F54;
+    }
+
+    .header__count-logo-text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 0.773rem;
+        border: 2px solid #9E7F54;
+        border-radius: 5px;
+        padding: 0.2rem;
+        cursor: pointer;
+    }
+
+    .header__link-icon {
+        width: 1.6rem;
+        margin: 0rem 0.13rem;
+        color: #9E7F54;
+    }
+
+    .header__count-text {
+        font-size: 1rem;
+        color: #9E7F54;
+        margin: 0rem 0.2rem;
+        text-align: center;
+    }
+
+    .dropdown {
+        position: absolute;
+        width: 90%;
+        margin-right: 0.773rem;
+        top: 2.3rem;
+        display: none;
+        justify-content: center;
+        background-color: #9E7F54;
+        color: #FFFFFF;
+        font-weight: 700;
+        padding: 0.43rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .user-container-register:hover > .dropdown {
+        display: flex;
+    }
+
+    .dropdown:hover {
+        text-decoration: underline;
+    }
+}

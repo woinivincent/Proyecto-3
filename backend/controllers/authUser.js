@@ -22,7 +22,7 @@ async function register(req, res) {
 
     try {
         await user.save();
-        res.status(200).send({ msg: "Usuario Guardado" });
+        res.status(200).send({ msg: "Usuario Guardado", ok: true });
     } catch (error) {
         res.status(400).send({ msg: "Error al crear el usuario", error });
     }

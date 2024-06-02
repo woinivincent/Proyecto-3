@@ -1,12 +1,3 @@
-
-
-// Función para obtener el contador de elementos en el carrito y mostrarlo en la interfaz
-export function updateUserCount() {
-    const userCount = document.querySelector(".user-count");
-    const carrito = localStorage.getItem("carrito") ? JSON.parse(localStorage.getItem("carrito")) : [];
-    userCount.textContent = carrito.length;
-}
-
 // Función principal que inicializa el slider
 export function initSlider() {
     const prevBtn = document.querySelector('.prev');

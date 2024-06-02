@@ -10,23 +10,27 @@ const agregarProductCart = async (req, res) => {
 
         if (!cart) {
             cart = new Cart({ user: user_id, products: [] });
+            await cart.save();
         }
 
         const existingProductIndex = cart.products.findIndex(item => item.product.equals(productId));
 
         if (existingProductIndex === -1) {
-            cart.products.push({ product: productId });
-            await cart.save();
-            res.status(200).send({ msg: "Producto agregado al carrito", updatedCart: cart });
+            cart = await Cart.findOneAndUpdate(
+                { user: user_id }, // Buscar el carrito del usuario que no tenga ya el producto
+                { $push: { products: { product: productId } } }, // Agregar el producto al array si no existe
+                { new: true, upsert: true } // Devolver el carrito actualizado y crear uno nuevo si no existe
+            );
+            res.status(200).send({ msg: "Producto agregado al carrito", updatedCart: cart, append: true});
         } else {
-            res.status(200).send({ msg: "El producto ya está en el carrito" });
+            res.status(200).send({ msg: "El producto ya está en el carrito", append: false});
         }
     } catch (error) {
         res.status(500).send({ msg: "Error en el servidor", error });
     }
 };
 
-
+//Ver si podemos usarlo - Ya esta el Aumentar y el Disminuir, no haria falta
 const editCartProduct = async (req, res) => {
     const { user_id } = req.user;
     const { productId, countProduct } = req.body;
@@ -54,13 +58,13 @@ const deleteCartProduct = async (req, res) => {
     try {
         // Buscar y eliminar el producto del carrito por su ID
         const cart = await Cart.findOneAndUpdate(
-            { user: user_id },
-            { $pull: { "products.product": productId } },
+            { user: user_id, products: { $elemMatch: { product: productId } } },
+            { $pull: { products: { product: productId } } },
             { new: true }
         );
 
         if (!cart) {
-            return res.status(404).send({ msg: "Carrito no encontrado" });
+            return res.status(404).send({ msg: "Producto no encontrado" });
         }
         res.status(200).send({ msg: "Producto eliminado del carrito" });
     } catch (error) {
@@ -72,18 +76,23 @@ const getCart = async (req, res) => {
     const { user_id } = req.user;
 
     try {
-        const cart = await Cart.findOne({ user: user_id }).populate({
-            path: 'products.product',
-            select: '_id name price description stock'
-        });
+
+        let cart = await Cart.findOne({ user: user_id });
 
         if (!cart) {
-            return res.status(404).send({ msg: "Carrito no encontrado" });
+            cart = new Cart({ user: user_id, products: [] });
+            await cart.save();
+        } else {
+            cart = await Cart.findOne({ user: user_id }).populate({
+                path: 'products.product',
+                select: '_id name image price description stock'
+            });
         }
 
         const cartProducts = cart.products.map(cartProduct => ({
             _id: cartProduct.product._id,
             name: cartProduct.product.name,
+            image: cartProduct.product.image,
             price: cartProduct.product.price,
             description: cartProduct.product.description,
             stock: cartProduct.product.stock,

@@ -33,38 +33,38 @@ const Register = () => {
     return (
         <div>
             <main className="main__register">
-            <img src={img} alt="Logo" />
+                <img src={img} alt="Logo" />
                 <h2>Bienvenido </h2>
                 <p className="paragraph">Comprá más rápido y llevá el control de tus pedidos, ¡en un solo lugar!</p>
                 <form className="form" onSubmit={handleSubmit}>
                     <div className="form-container">
                         <label className="form-label" htmlFor="name">NOMBRE</label>
-                        <input className="form-input-name" id="name" type="text" placeholder="ej.: María Perez" required autoComplete="off"/>
+                        <input className="form-input-name" id="name" type="text" placeholder="ej.: María Perez" required autoComplete="off" />
                     </div>
                     <div className="form-container">
                         <label className="form-label" htmlFor="mobile-email">EMAIL</label>
-                        <input className="form-input-name" id="mobile-email" type="email" placeholder="ej.: tunombre@email.com" autoComplete="off"/>
+                        <input className="form-input-name" id="mobile-email" type="email" placeholder="ej.: tunombre@email.com" autoComplete="off" />
                     </div>
                     <div className="form-container">
                         <label className="form-label" htmlFor="telefono">TELÉFONO (OPCIONAL)</label>
-                        <input className="form-input-telephone" id="telefono" type="text" placeholder="ej.: 1123445567" autoComplete="off"/>
+                        <input className="form-input-telephone" id="telefono" type="text" placeholder="ej.: 1123445567" autoComplete="off" />
                     </div>
                     <div className="form-container">
                         <label className="form-label" htmlFor="password">CONTRASEÑA</label>
-                        <input className="form-input-password" type={handlePasswordVisibility("current")} id="password" name="password" autoComplete="off"/>
+                        <input className="form-input-password" type={handlePasswordVisibility("current")} id="password" name="password" autoComplete="off" />
                         <div className="password-icons">
                             <i className={`bi ${passwordVisible.current ? 'bi-eye' : 'bi-eye-slash'}`} onClick={() => togglePasswordVisibility('current')}></i>
                         </div>
                     </div>
                     <div className="form-container">
                         <label className="form-label" htmlFor="repassword">CONFIRMAR CONTRASEÑA</label>
-                        <input className="form-input-repassword" type={handlePasswordVisibility("confirm")} id="repassword" name="repassword" autoComplete="off"/>
+                        <input className="form-input-repassword" type={handlePasswordVisibility("confirm")} id="repassword" name="repassword" autoComplete="off" />
                         <div className="password-icons">
                             <i className={`bi ${passwordVisible.confirm ? 'bi-eye' : 'bi-eye-slash'}`} onClick={() => togglePasswordVisibility('confirm')}></i>
                         </div>
                     </div>
                     <div className="form-container">
-                        <input className="input-submit" type="submit" name="submit" id="submit" value="CREAR CUENTA"/>
+                        <input className="input-submit" type="submit" name="submit" id="submit" value="CREAR CUENTA" />
                     </div>
                     <div className="user-login">
                         <p className="login-paragraph">¿Ya tenés una cuenta?</p>

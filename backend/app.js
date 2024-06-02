@@ -16,6 +16,7 @@ const userRoutes = require("./router/user");
 const adminRoutes = require("./router/admin");
 const productRoutes = require("./router/product");
 const cartRoutes = require("./router/cart");
+const passwordResetRoutes = require("./router/passwordReset");
 
 //Configuracion de Body-Parser
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -31,5 +32,6 @@ app.use(`/api/${apiVersion}`, userRoutes);
 app.use(`/api/${apiVersion}`, adminRoutes);
 app.use(`/api/${apiVersion}`, productRoutes);
 app.use(`/api/${apiVersion}`, cartRoutes);
+app.use(`/api/${apiVersion}`, passwordResetRoutes);
 
 module.exports = app;

@@ -1,19 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import ProductList from "../../Components/ProductList/ProductList";
-
+import "./Products.css";
 
 const Products = () => {
- 
-
-  return (
-    <main className="main__products">
-      <section className="container-products">
-      
-        <ProductList />
-        
-      </section>
-    </main>
-  );
+    return (
+        <main className="main__products-admin">
+            <ProductList />
+        </main>
+    );
 };
 
 export default Products;
