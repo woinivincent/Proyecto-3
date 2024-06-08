@@ -9,6 +9,10 @@ const app = express();
 //Configuracion Header HTTP - CORS
 app.use(cors( 
 ));
+app.use(cors({
+    origin: 'https://proyecto-3-1kat.vercel.app/'
+    
+  }));
 
 //Importar Rutas
 const authAdminRoutes = require("./router/authAdmin");
