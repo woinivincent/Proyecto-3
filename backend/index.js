@@ -12,20 +12,18 @@ const Port = process.env.PORT;
 
 const connectDB = async () => {
     try {
-      const dbName = process.env.DB_NAME || 'tuBaseDeDatos'; 
-      const uri = `mongodb+srv://${dbUser}:${dbPassword}@${dbHost}/${dbName}`;
-      await mongoose.connect(uri, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-      });
-      console.log("Conexión a la base de datos exitosa!");
-      
-      const server = app.listen(process.env.PORT || 3000, () => {
-        console.log(`Servidor corriendo en el puerto ${server.address().port}`);
-      });
+        await mongoose.connect(`mongodb+srv://${dbUser}:${dbPassword}@${dbHost}/`);
+        console.log("La conexion a la base de datos ha sido Exitosa.!!!");
+        app.listen(Port, () => {
+            console.log("==================================");
+            console.log("=============API-REST=============");
+            console.log("==================================");
+            console.log(`http://${ipServer}:${Port}/api/${apiVersion}/`);
+        });
     } catch (error) {
-      console.error("Error al conectar a la base de datos:", error);
+        console.error("Error al conectar a la base de datos", error);
     }
-  };
+};
+
 connectDB();
 initializeSuperAdmin();
